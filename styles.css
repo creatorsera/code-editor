@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Editor Section */
+#editor-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    border-right: 2px solid #333;
+    background: #252526;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #2d2d2d;
+    border-bottom: 2px solid #333;
+    cursor: grab;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Buttons */
+button {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005f9e;
+}
+
+/* Editor */
+#editor {
+    flex-grow: 1;
+    height: 100%;
+}
+
+/* Status Bar */
+.status-bar {
+    padding: 5px 10px;
+    background: #333;
+    font-size: 14px;
+    text-align: right;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Resizer */
+.resizer {
+    width: 5px;
+    cursor: ew-resize;
+    background: #444;
+}
+
+/* Preview Section */
+#preview-container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#preview {
+    flex-grow: 1;
+    border: none;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
